@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dry Calculator</title>
+  <link id="themeStylesheet" rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <h1>Dry Calculator</h1>
+  <p class="theme-buttons">
+    <button class="theme-button" onclick="toggleTheme('styles.css')">Light Mode</button>
+    <button class="theme-button" onclick="toggleTheme('styles_ocean.css')">Ocean Mode</button>
+    <button class="theme-button" onclick="toggleTheme('styles_dark.css')">Dark Mode</button>
+    <button class="theme-button" onclick="toggleTheme('styles_osrs.css')">OSRS Mode</button>
+  </p>  
+  <p>
+    Drop chance (example: "1/3000"): <input type="text" id="dropChance" value="1/3000">
+  </p>
+  <p>
+    Total kills: <input type="number" id="totalKills" min="0" value="0">
+  </p>
+  <p>
+    Drops obtained: <input type="number" id="dropsObtained" min="0" value="0">
+  </p>
+  <button onclick="calculateDry()">Calculate Probability</button>
+  <p id="result"></p>
+</div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
